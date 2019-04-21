@@ -35,15 +35,12 @@ spring:
         reset-enable: true
         login-username: admin
         login-password: admin
-  devtools:
-    livereload:
-      enabled: false #是否支持livereload
-      port: 35729
-    restart:
-      enabled: true #是否支持热部署
+
   jpa:
     database: MySQL
     show-sql: true
+  rabbitmq:
+    host: 172.16.103.129
 jwt:
   config:
     key: workoverflowisagoodwebforwebpeoplepleaseuseitthinkyou
@@ -54,3 +51,10 @@ eureka:
       defaultZone: http://127.0.0.1:6868/eureka
   instance:
     prefer-ip-address: true
+
+devtools:
+  livereload:
+    enabled: false #是否支持livereload
+    port: 35729
+  restart:
+    enabled: true #是否支持热部署

@@ -11,6 +11,8 @@ spring:
   jpa:
     database: MySQL
     show-sql: true
+  rabbitmq:
+    host: 172.16.103.129
 
 # jwt 配置
 jwt:

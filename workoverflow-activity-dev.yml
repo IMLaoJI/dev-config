@@ -40,3 +40,5 @@ spring:
     show-sql: true
   redis:
     host: 172.16.103.129
+  rabbitmq:
+    host: 172.16.103.129

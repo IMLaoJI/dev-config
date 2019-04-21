@@ -6,3 +6,9 @@ eureka:
     fetch-registry: false #是否从eureka中获取注册信息
     service-url:
       defaultZone: http://127.0.0.1:${server.port}/eureka
+
+spring:
+  application:
+    name: workoverflow-eureka
+  rabbitmq:
+    host: 172.16.103.129
