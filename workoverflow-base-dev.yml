@@ -1,11 +1,11 @@
 server:
-  port: 9014
+  port: 9001
 spring:
   application:
     name: workoverflow-base
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.103.129:3306/workoverflow_base?characterEncoding=utf-8
+    url: jdbc:mysql://172.16.103.130:3306/workoverflow_base?characterEncoding=utf-8
     username: root
     password: 123456
   jpa:
