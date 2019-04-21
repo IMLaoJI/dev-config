@@ -1,0 +1,22 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: workoverflow-complaint
+  data:
+    mongodb:
+      host: 172.16.103.129
+      database: complaintdb
+  redis:
+    host: 172.16.103.129
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
+

@@ -1,0 +1,52 @@
+server:
+  port: 9012
+spring:
+  application:
+    name: workoverflow-web
+  rabbitmq:
+    host: 172.16.103.129
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  # 跨域访问
+  instance:
+    prefer-ip-address: true
+# zuul网关配置
+zuul:
+  host:
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 5000
+  prefix: /web
+  ignoredPatterns: /**/user/login/**/, /**/user/register/**/, /**/sms/**/ # 忽略用户登录、注册、信息发送路径
+  routes:
+    # 配置base路由
+    workoverflow-base:
+      path: /base/**  # 拦截所有为base开头的路径
+      serviceId: workoverflow-base # 跳转到base服务
+    workoverflow-article:
+      path: /article/**
+      serviceId: workoverflow-article
+    workoverflow-friend:
+      path: /friend/**
+      serviceId: workoverflow-friend
+    workoverflow-gathering:
+      path: /activity/**
+      serviceId: workoverflow-activity
+    workoverflow-qa:
+      path: /qa/**
+      serviceId: workoverflow-qa
+    workoverflow-recruit:
+      path: /recruit/**
+      serviceId: workoverflow-recruit
+    workoverflow-search:
+      path: /search/**
+      serviceId: workoverflow-search
+    workoverflow-spit:
+      path: /complaint/**
+      serviceId: workoverflow-complaint
+    workoverflow-user:
+      path: /user/**
+      serviceId: workoverflow-user
+  # 传递请求头
+  sensitive-headers:

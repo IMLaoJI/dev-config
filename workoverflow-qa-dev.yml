@@ -1,0 +1,29 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: workoverflow-qa
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.103.129:3306/workoverflow_qa?characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    show-sql: true
+
+# jwt 配置
+jwt:
+  config:
+    key: workoverflowisagoodwebforwebpeoplepleaseuseitthinkyou
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,17 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: workoverflow-search
+  data:
+    elasticsearch:
+      cluster-nodes: 172.16.103.129:9300
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true

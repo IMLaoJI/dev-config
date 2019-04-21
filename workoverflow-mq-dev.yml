@@ -1,0 +1,34 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: workoverflow-mq
+  rabbitmq:
+    host: 172.16.103.129
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+devtools:
+  livereload:
+    enabled: false #是否支持livereload
+    port: 35729
+  restart:
+    enabled: true #是否支持热部署
+
+aliyun:
+  sms:
+    accessKeyId: LTAIBBrSArQm7l6h
+    accessKeySecret: pDhXjzLKbkoZUk18o2RNNVnDxedhqM
+    template_code: SMS_163850721
+    sign_name: workoverflow
+
+yunpian:
+  sms:
+    apikey: 1297d989ceb3ef0bdd1c65bab9216595
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
+

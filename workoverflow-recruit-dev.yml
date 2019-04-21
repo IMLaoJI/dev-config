@@ -1,0 +1,20 @@
+server: 
+  port: 9002
+spring: 
+  application:  
+    name: workoverflow-recruit
+  datasource:  
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.103.129:3306/workoverflow_recruit?characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa: 
+    database: MySQL
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
