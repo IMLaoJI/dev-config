@@ -1,5 +1,10 @@
 server:
   port: 6868
+spring:
+  application:
+    name: workoverflow-eureka
+  rabbitmq:
+    host: 172.16.103.129
 eureka:
   client:
     register-with-eureka: false #是否将当前微服务注册到eureka
@@ -7,8 +12,4 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:${server.port}/eureka
 
-spring:
-  application:
-    name: workoverflow-eureka
-  rabbitmq:
-    host: 172.16.103.129
+
