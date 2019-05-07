@@ -57,6 +57,6 @@ jwt:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:6868/eureka
+      defaultZone: http://172.16.103.129:6868/eureka
   instance:
     prefer-ip-address: true
