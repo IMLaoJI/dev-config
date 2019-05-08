@@ -22,8 +22,8 @@ jwt:
 # zuul网关配置
 zuul:
   host:
-    connect-timeout-millis: 5000
-    socket-timeout-millis: 5000
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
   prefix: /manager
   ignoredPatterns: /**/admin/login/**/, /**/sms/**/  # 忽略admin的登录路径
   routes:
