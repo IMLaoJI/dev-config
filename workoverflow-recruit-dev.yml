@@ -5,7 +5,7 @@ spring:
     name: workoverflow-recruit
   datasource:  
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.103.129:3306/workoverflow_recruit?characterEncoding=utf-8
+    url: jdbc:mysql://119.3.215.171:3306/workoverflow_recruit?characterEncoding=utf-8
     username: root
     password: 123456
   jpa: 
@@ -17,6 +17,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:6868/eureka
+      defaultZone: http://172.16.103.129:6868/eureka
   instance:
     prefer-ip-address: true
