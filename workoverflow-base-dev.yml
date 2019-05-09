@@ -14,8 +14,8 @@ spring:
   rabbitmq:
     host: 172.16.103.129
     
-logging:
-  level: error
+debug: false
+
 
 eureka:
   client:
