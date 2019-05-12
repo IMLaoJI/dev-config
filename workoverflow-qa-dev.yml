@@ -5,7 +5,7 @@ spring:
     name: workoverflow-qa
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://119.4.215.171:3306/workoverflow_qa?characterEncoding=utf-8
+    url: jdbc:mysql://119.3.215.171:3306/workoverflow_qa?characterEncoding=utf-8
     username: root
     password: 123456
   jpa:
