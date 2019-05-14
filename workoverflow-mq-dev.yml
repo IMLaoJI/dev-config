@@ -4,7 +4,7 @@ spring:
   application:
     name: workoverflow-mq
   rabbitmq:
-    host: 172.16.103.129
+    host: 119.3.215.171
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 devtools:
@@ -28,7 +28,7 @@ yunpian:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:6868/eureka
+      defaultZone: http://119.3.215.171:6868/eureka
   instance:
     prefer-ip-address: true
 

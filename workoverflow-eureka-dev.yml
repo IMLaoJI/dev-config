@@ -4,7 +4,7 @@ spring:
   application:
     name: workoverflow-eureka
   rabbitmq:
-    host: 172.16.103.129
+    host: 119.3.215.171
 eureka:
   client:
     register-with-eureka: false #是否将当前微服务注册到eureka

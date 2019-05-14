@@ -39,12 +39,12 @@ spring:
     database: MySQL
     show-sql: true
   redis:
-    host: 172.16.103.129
+    host: 119.3.215.171
   rabbitmq:
-    host: 172.16.103.129
+    host: 119.3.215.171
 eureka:
   client:
     service-url:
-      defaultZone: http://172.16.103.129:6868/eureka
+      defaultZone: http://119.3.215.171:6868/eureka
   instance:
     prefer-ip-address: true

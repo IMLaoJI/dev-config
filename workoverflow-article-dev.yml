@@ -5,7 +5,7 @@ spring:
     name: workoverflow-article
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.103.129:3306/workoverflow_article?characterEncoding=utf-8
+    url: jdbc:mysql://119.3.215.171:3306/workoverflow_article?characterEncoding=utf-8
     username: root
     password: 123456
     druid:
@@ -39,13 +39,13 @@ spring:
     database: MySQL
     show-sql: true
   redis:
-    host: 172.16.103.129
+    host: 119.3.215.171
   rabbitmq:
-    host: 172.16.103.129
+    host: 119.3.215.171
 
 eureka:
   client:
     service-url:
-      defaultZone: http://172.16.103.129:6868/eureka
+      defaultZone: http://119.3.215.171:6868/eureka
   instance:
     prefer-ip-address: true
