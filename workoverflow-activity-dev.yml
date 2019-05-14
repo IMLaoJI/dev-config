@@ -5,7 +5,7 @@ spring:
     name: workoverflow-activity
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.103.129:3306/workoverflow_gathering?characterEncoding=utf-8
+    url: jdbc:mysql://119.3.215.171:3306/workoverflow_gathering?characterEncoding=utf-8
     username: root
     password: 123456
     druid:
@@ -42,3 +42,9 @@ spring:
     host: 172.16.103.129
   rabbitmq:
     host: 172.16.103.129
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.103.129:6868/eureka
+  instance:
+    prefer-ip-address: true
