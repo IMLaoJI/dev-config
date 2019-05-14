@@ -13,7 +13,13 @@ spring:
     show-sql: true
   rabbitmq:
     host: 119.3.215.171
-
+  zipkin:
+    base-url: http://119.3.215.171:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 # jwt 配置
 jwt:
   config:
@@ -29,3 +35,7 @@ eureka:
 feign:
   hystrix:
     enabled: true
+
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
