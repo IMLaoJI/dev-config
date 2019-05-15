@@ -12,7 +12,7 @@ spring:
     database: MySQL
     show-sql: true
   rabbitmq:
-    host: 172.16.103.129
+    host: 119.3.215.171
 
 eureka:
   client:
