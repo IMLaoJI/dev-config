@@ -5,6 +5,8 @@ spring:
     name: workoverflow-manager
   rabbitmq:
     host: 119.3.215.171
+    username: guest
+    password: guest
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 eureka:
