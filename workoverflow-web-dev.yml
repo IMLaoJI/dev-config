@@ -5,6 +5,8 @@ spring:
     name: workoverflow-web
   rabbitmq:
     host: 119.3.215.171
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 eureka:
   client:
     service-url:
