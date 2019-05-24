@@ -14,6 +14,20 @@ eureka:
   # 跨域访问
   instance:
     prefer-ip-address: true
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
 # zuul网关配置
 zuul:
   host:
