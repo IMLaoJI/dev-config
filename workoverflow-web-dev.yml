@@ -17,8 +17,8 @@ eureka:
 # zuul网关配置
 zuul:
   host:
-    connect-timeout-millis: 5000
-    socket-timeout-millis: 5000
+    connect-timeout-millis: 500000
+    socket-timeout-millis: 500000
   prefix: /web
   ignoredPatterns: /**/user/login/**/, /**/user/register/**/, /**/sms/**/ # 忽略用户登录、注册、信息发送路径
   routes:
