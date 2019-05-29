@@ -49,3 +49,9 @@ eureka:
       defaultZone: http://119.3.215.171:6868/eureka
   instance:
     prefer-ip-address: true
+    
+    
+jwt:
+  config:
+    key: workoverflowisagoodwebforwebpeoplepleaseuseitthinkyou
+    ttl: 3600000 #一个小时过期时间
