@@ -22,6 +22,11 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+            
+jwt:
+  config:
+    key: workoverflowisagoodwebforwebpeoplepleaseuseitthinkyou
+    ttl: 3600000 #一个小时过期时间
 
 ribbon:
   ReadTimeout: 20000
